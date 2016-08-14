@@ -1,0 +1,160 @@
+﻿html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /*font-family: 'Open Sans', sans-serif;*/
+    color: #868585;
+    background: #fdfcfb;
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+header {
+    margin: 40px 0 10px;
+}
+
+.menu {
+    background: #fefefe;
+    border: 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .19);
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    padding-right: 50px;
+}
+
+.navbar-brand img {
+      position: relative;  
+      top: -14px;
+}
+
+.navbar-default .navbar-nav > li > a{
+    color: #8d8c8c;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.navbar-default .navbar-nav > li.active-link > a {
+    border-bottom: 1px solid #d42819;
+    color: #8d8c8c;
+}
+
+.navbar-default .navbar-nav:not(.icons) > li > a:hover {
+    border-bottom: 1px solid #d42819;
+    color: #8d8c8c;
+}
+
+.icons li a {
+    padding: 15px 15px;
+}
+
+.menu .container {
+    position: relative;
+}
+
+.globe {
+    font-size: 25px;
+    line-height: 48px;
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+    color: #d0cfce;
+    display: none;
+}
+
+.line-tree {
+    margin-bottom: 20px;
+}
+
+.line-tree a {
+    font-size: 20px;
+}
+
+.side-bar {
+    border: 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .19);
+}
+
+.main-field {
+    border: 0;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #f5f5f5;
+    text-align:center;
+}
+
+.footer p {
+    font-size: 16px;
+    color: #868585;
+    
+}
+
+@media only screen and (max-width: 1190px) {
+    .navbar-brand {
+    padding-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .icons {
+        display: none;
+        position: absolute;
+        right: 30px;
+        top: 40px
+    }
+    .icons li {
+        float: none;
+    }
+    .icons li a {
+        padding: 5px;
+    }
+    .globe {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .menu {
+        padding: 0;
+    }   
+     .navbar-default .navbar-nav > li > a {
+        transition: all .5s;
+    } 
+    .navbar-default .navbar-nav > li.active-link > a {
+        border-bottom: 0;
+        color: #fff;
+        background: #d42819;
+    }
+    .navbar-default .navbar-nav:not(.icons) > li > a:hover {
+        border-bottom: 0;
+        color: #fff;
+        background: #d42819;
+    }
+    .icons {
+        display: block !important;
+        position: relative;
+        right: 0;
+        top: 0;
+    }
+    .icons li {
+        display: inline-block;
+    }
+    .globe {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 993px) {
+    .icons {
+        display: block !important;
+    }
+}
+
